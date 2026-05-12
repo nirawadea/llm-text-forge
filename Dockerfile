@@ -5,7 +5,7 @@ FROM python:3.9
 WORKDIR /code
 
 ## copy the current directory contents in the container at /code
-COPY ./requrements.txt /code/requirements.txt
+COPY ./requirements.txt /code/requirements.txt
 
 ## Install the requirements.txt
 RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
